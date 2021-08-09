@@ -1,7 +1,7 @@
 @use 'abstracts/variables' as *;
 
 .order-container {
-  width: 450px;
+  max-width: 450px;
   max-height: 700px;
   //   max-width: 100%;
   display: flex;
@@ -10,7 +10,7 @@
   overflow: hidden;
   background-color: #fff;
   box-shadow: 0 2rem 1.6rem rgba($clr-accent-blue, 0.1);
-  margin: auto;
+  margin-bottom: 5rem;
 }
 
 .img-container {
