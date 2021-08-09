@@ -1,0 +1,124 @@
+@use 'abstracts/variables' as *;
+
+.order-container {
+  width: 450px;
+  max-height: 700px;
+  //   max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 2rem 1.6rem rgba($clr-accent-blue, 0.1);
+  margin: auto;
+}
+
+.img-container {
+  height: 250px;
+  background-image: url(/images/illustration-hero.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+
+  @media only screen and (max-width: 768px) {
+    height: 200px;
+  }
+}
+
+.order {
+  background-color: #fff;
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+  text-align: center;
+  padding: 5rem;
+  font-size: 1.6rem;
+
+  &__icon {
+    width: 6rem;
+    height: auto;
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: 900;
+  }
+
+  &__text {
+    font-weight: 300;
+    color: $clr-desat-blue;
+  }
+
+  &__plan {
+    background-color: $clr-neutral-blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    border-radius: 1rem;
+    transition: all 0.2s;
+  }
+
+  &__plan-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__plan-title {
+    font-size: 1.6rem;
+
+    & span {
+      display: block;
+      font-weight: 300;
+      color: $clr-desat-blue;
+    }
+  }
+
+  &__change {
+    font-weight: 600;
+    color: $clr-accent-blue;
+    border: none;
+    background-color: transparent;
+
+    &:hover {
+      color: black;
+      transform: scale(1.1);
+    }
+  }
+
+  &__payment {
+    background-color: $clr-accent-blue;
+    border: none;
+    padding: 1.2rem;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    box-shadow: 0 2rem 1.6rem rgba($clr-accent-blue, 0.2);
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      transform: translateY(-4px);
+      background-color: rgba($clr-accent-blue, 0.8);
+    }
+  }
+
+  &__cancel {
+    align-self: center;
+    border: none;
+    width: max-content;
+    background-color: transparent;
+    color: $clr-desat-blue;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-bottom: 2px solid transparent;
+
+    &:hover {
+      border-bottom: 2px solid $clr-accent-blue;
+    }
+  }
+}

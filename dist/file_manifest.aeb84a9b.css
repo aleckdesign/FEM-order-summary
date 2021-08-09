@@ -1,0 +1,146 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Red Hat Display", sans-serif;
+}
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  background-image: url(/pattern-background-desktop.b5d719d3.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #e0e8ff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  body {
+    background-image: url(/pattern-background-mobile.1b71ddc3.svg);
+    padding: 2rem;
+  }
+}
+
+.order-container {
+  width: 450px;
+  max-height: 700px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 2rem 1.6rem rgba(56, 41, 224, 0.1);
+  margin: auto;
+}
+
+.img-container {
+  height: 250px;
+  background-image: url(/illustration-hero.4e84ddbe.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .img-container {
+    height: 200px;
+  }
+}
+
+.order {
+  background-color: #fff;
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+  text-align: center;
+  padding: 5rem;
+  font-size: 1.6rem;
+}
+.order__icon {
+  width: 6rem;
+  height: auto;
+}
+.order__title {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.order__text {
+  font-weight: 300;
+  color: #7280a7;
+}
+.order__plan {
+  background-color: #f5f7ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  border-radius: 1rem;
+  transition: all 0.2s;
+}
+.order__plan-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.order__plan-title {
+  font-size: 1.6rem;
+}
+.order__plan-title span {
+  display: block;
+  font-weight: 300;
+  color: #7280a7;
+}
+.order__change {
+  font-weight: 600;
+  color: #3829e0;
+  border: none;
+  background-color: transparent;
+}
+.order__change:hover {
+  color: black;
+  transform: scale(1.1);
+}
+.order__payment {
+  background-color: #3829e0;
+  border: none;
+  padding: 1.2rem;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  box-shadow: 0 2rem 1.6rem rgba(56, 41, 224, 0.2);
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.order__payment:hover {
+  transform: translateY(-4px);
+  background-color: rgba(56, 41, 224, 0.8);
+}
+.order__cancel {
+  align-self: center;
+  border: none;
+  width: max-content;
+  background-color: transparent;
+  color: #7280a7;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-bottom: 2px solid transparent;
+}
+.order__cancel:hover {
+  border-bottom: 2px solid #3829e0;
+}
+
+/*# sourceMappingURL=/file_manifest.aeb84a9b.css.map */
